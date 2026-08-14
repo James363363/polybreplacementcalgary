@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.polybreplacementcalgary.com/sitemap.xml
