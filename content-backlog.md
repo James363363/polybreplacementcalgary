@@ -52,17 +52,17 @@ Last updated: 2026-08-15
 |---|---|---|
 | Can SharkBite fittings fix Poly-B pipe? | `/poly-b-sharkbite-fittings-calgary/` | Fact-checked: SharkBite doesn't list Poly-B on its general compatibility chart; a dedicated transition-only adapter exists and requires an internal stiffener. Framed as repair/transition only, never a repipe substitute. |
 | Is Poly-B still used in new construction? | `/poly-b-new-construction-calgary/` | Fact-checked: resin manufacturing stopped ~1998, code formally dropped Poly-B in 2005, existing installs grandfathered. Original "decode the date stamp" angle was reworked — no consumer-facing source documents how to read an install date off the pipe, so the article redirects homeowners to their home's construction/permit date instead, plus the PB2110 stamp for material confirmation. |
+| Poly-B and home inspections — what inspectors actually flag | `/poly-b-home-inspection-calgary/` | Fact-checked: Alberta has required home inspectors to hold a provincial licence since 2011 under the Consumer Protection Act's Home Inspection Business Regulation (confirmed via alberta.ca and NACHI Alberta chapter). Content sticks to general, verifiable claims about inspection scope (visual/non-invasive, standard material identification) rather than quoting specific CAHPI Standards of Practice wording, since that source PDF wasn't fetchable. Checked for overlap with the existing insurance and buying/selling pages before writing — kept this page focused on the inspection process and report itself (a distinct angle) rather than repeating their financial-consequence/negotiation framing, and linked to both from the body. |
 
 ## Queued topics (priority order, ready to build)
 
-1. **Poly-B and home inspections — what inspectors actually flag.** Local-transactional-adjacent, ties into buying/selling and insurance. Check for overlap with existing insurance/buying-selling pages before writing; likely fine as a distinct angle (inspection process vs. financial consequences).
-2. **Does a Poly-B repipe need a City of Calgary permit?** Informational, low competition, low overlap with existing pages.
-3. **Poly-B pipe in specific Calgary communities built 1978–1995** (e.g., older established neighbourhoods) — strong local-intent angle, low overlap.
-4. **Can you get a mortgage or refinance with Poly-B pipe in the home?** Financial-consequence angle, distinct from the insurance page's focus.
-5. **How long does a full Poly-B repipe actually take?** Timeline-focused — check overlap with replacement-process page (may already cover this; verify before building).
-6. **Poly-B pipe and rental/landlord obligations in Alberta.** Distinct audience (landlords, not owner-occupiers) — low overlap, untapped intent.
-7. **What does a Poly-B home inspection report actually say?** (sample findings, terminology) — check overlap with #1 above; may need merging into one page per `scoring-formula.md`'s consolidation rule.
-8. **Poly-B vs. galvanized steel pipe** (some older Calgary homes have galvanized, not Poly-B — disambiguation content, informational intent, likely lower priority/search volume; verify demand before building).
+1. **Does a Poly-B repipe need a City of Calgary permit?** Informational, low competition, low overlap with existing pages.
+2. **Poly-B pipe in specific Calgary communities built 1978–1995** (e.g., older established neighbourhoods) — strong local-intent angle, low overlap.
+3. **Can you get a mortgage or refinance with Poly-B pipe in the home?** Financial-consequence angle, distinct from the insurance page's focus.
+4. **How long does a full Poly-B repipe actually take?** Timeline-focused — check overlap with replacement-process page (may already cover this; verify before building).
+5. **Poly-B pipe and rental/landlord obligations in Alberta.** Distinct audience (landlords, not owner-occupiers) — low overlap, untapped intent.
+6. **What does a Poly-B home inspection report actually say?** (sample findings, terminology) — now largely covered by the new `/poly-b-home-inspection-calgary/` page above (report-language section); check for remaining gap before building as a separate page, likely fold any leftover angle into that page instead per `scoring-formula.md`'s consolidation rule.
+7. **Poly-B vs. galvanized steel pipe** (some older Calgary homes have galvanized, not Poly-B — disambiguation content, informational intent, likely lower priority/search volume; verify demand before building).
 
 ## Flagged overlap-risk — review before scheduling
 
@@ -82,7 +82,7 @@ page instead.
   `poly-b-vs-pex-vs-copper/`. Skip unless reframed around a narrow
   sub-question that page doesn't answer.
 - **Repipe timeline / how long it takes** — overlaps
-  `poly-b-replacement-process-calgary/`; see queued item #5 — verify before
+  `poly-b-replacement-process-calgary/`; see queued item #4 — verify before
   building rather than skip outright, since the existing page may not
   cover timeline in detail.
 
@@ -96,4 +96,12 @@ page instead.
   the closest existing image in `/images/` (see file list in the repo) with
   accurate alt text rather than inventing a filename that doesn't exist —
   a broken hero image is worse than a reused one. Flag in this file if a
-  topic really needs its own photo.
+  topic really needs its own photo. The new home-inspections page reused
+  `hero-buying-selling.jpg` (already used on the buying/selling page) since
+  no inspection-specific photo exists — fine to reuse, but flagging in case
+  a dedicated photo becomes worth commissioning once the backlog grows.
+- Only 7 queued topics remain, and 4 of the 8 originally flagged overlap-risk
+  items still need review before they can be scheduled. When the queued list
+  gets down to a handful of unambiguous topics (or runs dry), the next run
+  should stop and flag it for a fresh batch of keyword research rather than
+  inventing new topics unattended, per the process note above.
