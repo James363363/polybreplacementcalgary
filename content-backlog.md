@@ -4,7 +4,7 @@ Tracking file for the twice-weekly SEO article production process. Read this
 file at the start of every content-production run to see what's published,
 what's queued, and what needs review before it's built.
 
-Last updated: 2026-08-15
+Last updated: 2026-08-20
 
 ## Cadence & process
 
@@ -28,6 +28,11 @@ Last updated: 2026-08-15
   updated to link to new articles below. New pages get inbound links from
   relevant existing pages' body copy instead. Revisit if the backlog grows
   enough that a dedicated articles/guides index page becomes worthwhile.
+- Note (2026-08-20 run): the Zapier GitHub connector intermittently returns
+  "insufficient tasks on account" (a Zapier plan task-quota issue, not an
+  auth problem). When this happens, reads still work via the public repo's
+  raw.githubusercontent.com URLs, so drafting/fact-checking can continue
+  while blocked — only the actual push has to wait for quota to free up.
 
 ## Published pages (11)
 
@@ -54,15 +59,20 @@ Last updated: 2026-08-15
 | Is Poly-B still used in new construction? | `/poly-b-new-construction-calgary/` | Fact-checked: resin manufacturing stopped ~1998, code formally dropped Poly-B in 2005, existing installs grandfathered. Original "decode the date stamp" angle was reworked — no consumer-facing source documents how to read an install date off the pipe, so the article redirects homeowners to their home's construction/permit date instead, plus the PB2110 stamp for material confirmation. |
 | Poly-B and home inspections — what inspectors actually flag | `/poly-b-home-inspection-calgary/` | Fact-checked: Alberta has required home inspectors to hold a provincial licence since 2011 under the Consumer Protection Act's Home Inspection Business Regulation (confirmed via alberta.ca and NACHI Alberta chapter). Content sticks to general, verifiable claims about inspection scope (visual/non-invasive, standard material identification) rather than quoting specific CAHPI Standards of Practice wording, since that source PDF wasn't fetchable. Checked for overlap with the existing insurance and buying/selling pages before writing — kept this page focused on the inspection process and report itself (a distinct angle) rather than repeating their financial-consequence/negotiation framing, and linked to both from the body. |
 
+## Week 2 articles (published 2026-08-20)
+
+| Topic | URL | Notes |
+|---|---|---|
+| Does a Poly-B repipe need a City of Calgary permit? | `/poly-b-permit-requirements-calgary/` | Fact-checked against calgary.ca and a plumbing-permit reference: yes, a permit is required for replacing concealed water supply lines (bylaw treats it as "altering the plumbing system"); homeowner permit fee is $112 + 4% Safety Codes Council fee (~$116.50); rough-in and final inspections required; homeowners may self-permit only if owner-occupied and doing the work themselves; unpermitted concealed work requires a licensed contractor to resolve retroactively. Reused `hero-process.jpg` (closest thematic match — permits/inspections/process) since no permit-specific photo exists. Linked to the cost and process pages from the body. |
+
 ## Queued topics (priority order, ready to build)
 
-1. **Does a Poly-B repipe need a City of Calgary permit?** Informational, low competition, low overlap with existing pages.
-2. **Poly-B pipe in specific Calgary communities built 1978–1995** (e.g., older established neighbourhoods) — strong local-intent angle, low overlap.
-3. **Can you get a mortgage or refinance with Poly-B pipe in the home?** Financial-consequence angle, distinct from the insurance page's focus.
-4. **How long does a full Poly-B repipe actually take?** Timeline-focused — check overlap with replacement-process page (may already cover this; verify before building).
-5. **Poly-B pipe and rental/landlord obligations in Alberta.** Distinct audience (landlords, not owner-occupiers) — low overlap, untapped intent.
-6. **What does a Poly-B home inspection report actually say?** (sample findings, terminology) — now largely covered by the new `/poly-b-home-inspection-calgary/` page above (report-language section); check for remaining gap before building as a separate page, likely fold any leftover angle into that page instead per `scoring-formula.md`'s consolidation rule.
-7. **Poly-B vs. galvanized steel pipe** (some older Calgary homes have galvanized, not Poly-B — disambiguation content, informational intent, likely lower priority/search volume; verify demand before building).
+1. **Poly-B pipe in specific Calgary communities built 1978–1995** (e.g., older established neighbourhoods) — strong local-intent angle, low overlap.
+2. **Can you get a mortgage or refinance with Poly-B pipe in the home?** Financial-consequence angle, distinct from the insurance page's focus.
+3. **How long does a full Poly-B repipe actually take?** Timeline-focused — check overlap with replacement-process page (may already cover this; verify before building).
+4. **Poly-B pipe and rental/landlord obligations in Alberta.** Distinct audience (landlords, not owner-occupiers) — low overlap, untapped intent.
+5. **What does a Poly-B home inspection report actually say?** (sample findings, terminology) — now largely covered by the `/poly-b-home-inspection-calgary/` page (report-language section); check for remaining gap before building as a separate page, likely fold any leftover angle into that page instead per `scoring-formula.md`'s consolidation rule.
+6. **Poly-B vs. galvanized steel pipe** (some older Calgary homes have galvanized, not Poly-B — disambiguation content, informational intent, likely lower priority/search volume; verify demand before building).
 
 ## Flagged overlap-risk — review before scheduling
 
@@ -82,7 +92,7 @@ page instead.
   `poly-b-vs-pex-vs-copper/`. Skip unless reframed around a narrow
   sub-question that page doesn't answer.
 - **Repipe timeline / how long it takes** — overlaps
-  `poly-b-replacement-process-calgary/`; see queued item #4 — verify before
+  `poly-b-replacement-process-calgary/`; see queued item #3 — verify before
   building rather than skip outright, since the existing page may not
   cover timeline in detail.
 
@@ -96,12 +106,13 @@ page instead.
   the closest existing image in `/images/` (see file list in the repo) with
   accurate alt text rather than inventing a filename that doesn't exist —
   a broken hero image is worse than a reused one. Flag in this file if a
-  topic really needs its own photo. The new home-inspections page reused
-  `hero-buying-selling.jpg` (already used on the buying/selling page) since
-  no inspection-specific photo exists — fine to reuse, but flagging in case
-  a dedicated photo becomes worth commissioning once the backlog grows.
-- Only 7 queued topics remain, and 4 of the 8 originally flagged overlap-risk
-  items still need review before they can be scheduled. When the queued list
-  gets down to a handful of unambiguous topics (or runs dry), the next run
-  should stop and flag it for a fresh batch of keyword research rather than
+  topic really needs its own photo. `hero-process.jpg` was reused for the
+  new permit-requirements page (2026-08-20); it's now been used for both
+  the replacement-process page and this one, which is fine but worth noting
+  in case a dedicated photo becomes worth commissioning once the backlog
+  grows.
+- Only 6 queued topics remain, and all 4 flagged overlap-risk items still
+  need review before they can be scheduled. When the queued list gets down
+  to a handful of unambiguous topics (or runs dry), the next run should
+  stop and flag it for a fresh batch of keyword research rather than
   inventing new topics unattended, per the process note above.
