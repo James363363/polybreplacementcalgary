@@ -4,7 +4,7 @@ Tracking file for the twice-weekly SEO article production process. Read this
 file at the start of every content-production run to see what's published,
 what's queued, and what needs review before it's built.
 
-Last updated: 2026-08-20
+Last updated: 2026-08-21
 
 ## Cadence & process
 
@@ -65,14 +65,19 @@ Last updated: 2026-08-20
 |---|---|---|
 | Does a Poly-B repipe need a City of Calgary permit? | `/poly-b-permit-requirements-calgary/` | Fact-checked against calgary.ca and a plumbing-permit reference: yes, a permit is required for replacing concealed water supply lines (bylaw treats it as "altering the plumbing system"); homeowner permit fee is $112 + 4% Safety Codes Council fee (~$116.50); rough-in and final inspections required; homeowners may self-permit only if owner-occupied and doing the work themselves; unpermitted concealed work requires a licensed contractor to resolve retroactively. Reused `hero-process.jpg` (closest thematic match — permits/inspections/process) since no permit-specific photo exists. Linked to the cost and process pages from the body. |
 
+## Week 3 articles (published 2026-08-21)
+
+| Topic | URL | Notes |
+|---|---|---|
+| Poly-B pipe in specific Calgary communities built 1978–1995 | `/poly-b-communities-calgary/` | Fact-checked community establishment years via Wikipedia (cross-referenced against calgary.ca, which doesn't publish founding dates on its community profile pages): Deer Ridge established 1978, Edgemont development began 1978, Ranchlands established 1977. Only these three communities were verified with a solid source before the run hit repeated `PROVENANCE_REQUIRED` fetch failures on further Wikipedia lookups (likely an approval-gate on outbound fetches with no user present to approve, since this ran unattended) — the article is explicit that its community list is illustrative, not exhaustive, and repeatedly redirects readers to confirming their own home's build year rather than relying on neighbourhood name alone, so the incomplete list doesn't create an accuracy risk. Reused `hero-warning-signs.jpg` (closest thematic match — pipe identification) since no community-specific photo exists. Linked to the warning-signs and replacement-cost pages from the body. If future runs have working outbound fetch access, consider expanding the verified community list (candidates not yet confirmed: Woodbine, Hawkwood, McKenzie Lake, Sundance, Cedarbrae). |
+
 ## Queued topics (priority order, ready to build)
 
-1. **Poly-B pipe in specific Calgary communities built 1978–1995** (e.g., older established neighbourhoods) — strong local-intent angle, low overlap.
-2. **Can you get a mortgage or refinance with Poly-B pipe in the home?** Financial-consequence angle, distinct from the insurance page's focus.
-3. **How long does a full Poly-B repipe actually take?** Timeline-focused — check overlap with replacement-process page (may already cover this; verify before building).
-4. **Poly-B pipe and rental/landlord obligations in Alberta.** Distinct audience (landlords, not owner-occupiers) — low overlap, untapped intent.
-5. **What does a Poly-B home inspection report actually say?** (sample findings, terminology) — now largely covered by the `/poly-b-home-inspection-calgary/` page (report-language section); check for remaining gap before building as a separate page, likely fold any leftover angle into that page instead per `scoring-formula.md`'s consolidation rule.
-6. **Poly-B vs. galvanized steel pipe** (some older Calgary homes have galvanized, not Poly-B — disambiguation content, informational intent, likely lower priority/search volume; verify demand before building).
+1. **Can you get a mortgage or refinance with Poly-B pipe in the home?** Financial-consequence angle, distinct from the insurance page's focus.
+2. **How long does a full Poly-B repipe actually take?** Timeline-focused — check overlap with replacement-process page (may already cover this; verify before building).
+3. **Poly-B pipe and rental/landlord obligations in Alberta.** Distinct audience (landlords, not owner-occupiers) — low overlap, untapped intent.
+4. **What does a Poly-B home inspection report actually say?** (sample findings, terminology) — now largely covered by the `/poly-b-home-inspection-calgary/` page (report-language section); check for remaining gap before building as a separate page, likely fold any leftover angle into that page instead per `scoring-formula.md`'s consolidation rule.
+5. **Poly-B vs. galvanized steel pipe** (some older Calgary homes have galvanized, not Poly-B — disambiguation content, informational intent, likely lower priority/search volume; verify demand before building).
 
 ## Flagged overlap-risk — review before scheduling
 
@@ -92,7 +97,7 @@ page instead.
   `poly-b-vs-pex-vs-copper/`. Skip unless reframed around a narrow
   sub-question that page doesn't answer.
 - **Repipe timeline / how long it takes** — overlaps
-  `poly-b-replacement-process-calgary/`; see queued item #3 — verify before
+  `poly-b-replacement-process-calgary/`; see queued item #2 — verify before
   building rather than skip outright, since the existing page may not
   cover timeline in detail.
 
@@ -107,12 +112,19 @@ page instead.
   accurate alt text rather than inventing a filename that doesn't exist —
   a broken hero image is worse than a reused one. Flag in this file if a
   topic really needs its own photo. `hero-process.jpg` was reused for the
-  new permit-requirements page (2026-08-20); it's now been used for both
-  the replacement-process page and this one, which is fine but worth noting
-  in case a dedicated photo becomes worth commissioning once the backlog
-  grows.
-- Only 6 queued topics remain, and all 4 flagged overlap-risk items still
+  permit-requirements page (2026-08-20), and `hero-warning-signs.jpg` was
+  reused for the new communities page (2026-08-21); both are now used on
+  multiple pages, which is fine but worth noting in case dedicated photos
+  become worth commissioning once the backlog grows.
+- Only 5 queued topics remain, and all 4 flagged overlap-risk items still
   need review before they can be scheduled. When the queued list gets down
   to a handful of unambiguous topics (or runs dry), the next run should
   stop and flag it for a fresh batch of keyword research rather than
   inventing new topics unattended, per the process note above.
+- Note (2026-08-21 run): outbound WebFetch calls started failing partway
+  through fact-checking with `PROVENANCE_REQUIRED` (a permission gate that
+  needs a user to approve, unavailable in this unattended scheduled run).
+  WebSearch continued to work throughout. If a future run hits the same
+  issue, lean on WebSearch results and only fetch pages that don't need
+  the failing tool, and don't publish a specific factual claim that
+  couldn't be independently confirmed.
