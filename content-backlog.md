@@ -4,7 +4,7 @@ Tracking file for the twice-weekly SEO article production process. Read this
 file at the start of every content-production run to see what's published,
 what's queued, and what needs review before it's built.
 
-Last updated: 2026-08-21
+Last updated: 2026-08-25
 
 ## Cadence & process
 
@@ -33,6 +33,11 @@ Last updated: 2026-08-21
   auth problem). When this happens, reads still work via the public repo's
   raw.githubusercontent.com URLs, so drafting/fact-checking can continue
   while blocked — only the actual push has to wait for quota to free up.
+- Note (2026-08-25 run): WebFetch worked reliably throughout this run (no
+  repeat of the 2026-08-21 `PROVENANCE_REQUIRED` failures), so fact-checking
+  could use both WebSearch and WebFetch this time. The GitHub connector also
+  worked cleanly end to end, including the two-step create/update on the new
+  article and single-shot updates on sitemap.xml/content-backlog.md.
 
 ## Published pages (11)
 
@@ -71,13 +76,18 @@ Last updated: 2026-08-21
 |---|---|---|
 | Poly-B pipe in specific Calgary communities built 1978–1995 | `/poly-b-communities-calgary/` | Fact-checked community establishment years via Wikipedia (cross-referenced against calgary.ca, which doesn't publish founding dates on its community profile pages): Deer Ridge established 1978, Edgemont development began 1978, Ranchlands established 1977. Only these three communities were verified with a solid source before the run hit repeated `PROVENANCE_REQUIRED` fetch failures on further Wikipedia lookups (likely an approval-gate on outbound fetches with no user present to approve, since this ran unattended) — the article is explicit that its community list is illustrative, not exhaustive, and repeatedly redirects readers to confirming their own home's build year rather than relying on neighbourhood name alone, so the incomplete list doesn't create an accuracy risk. Reused `hero-warning-signs.jpg` (closest thematic match — pipe identification) since no community-specific photo exists. Linked to the warning-signs and replacement-cost pages from the body. If future runs have working outbound fetch access, consider expanding the verified community list (candidates not yet confirmed: Woodbine, Hawkwood, McKenzie Lake, Sundance, Cedarbrae). |
 
+## Week 4 articles (published 2026-08-25)
+
+| Topic | URL | Notes |
+|---|---|---|
+| Can you get a mortgage or refinance with Poly-B pipe in the home? | `/poly-b-mortgage-refinance-calgary/` | Fact-checked via WebSearch/WebFetch: no Canadian lender rule requires Poly-B removal before approving a mortgage; confirmed that Canadian mortgage lenders universally require proof of active home insurance before funding/renewing a loan (standard industry practice, multiple sources), and that Poly-B is a well-documented home-insurance underwriting risk (consistent with the site's own `/poly-b-home-insurance-alberta/` page — some insurers surcharge, exclude, or decline). The article frames the insurance requirement as the real financing chokepoint rather than asserting a direct "lenders refuse Poly-B" rule, since only one low-authority, uncited source made that direct claim. Refinance-appraisal claims (appraisers may note visible Poly-B, similar to an aging furnace/roof) are framed generally/conditionally since no specific lender policy document was found to cite. Checked for overlap with the insurance and buying/selling pages before writing — kept this page focused specifically on the lending/financing mechanism (distinct angle) and cross-linked to both. Reused `hero-insurance.jpg` (closest thematic match — a homeowner reviewing financial paperwork at a kitchen table, verified by viewing the actual image) since no mortgage-specific photo exists. Linked to the insurance, replacement-cost, and buying/selling pages from the body. |
+
 ## Queued topics (priority order, ready to build)
 
-1. **Can you get a mortgage or refinance with Poly-B pipe in the home?** Financial-consequence angle, distinct from the insurance page's focus.
-2. **How long does a full Poly-B repipe actually take?** Timeline-focused — check overlap with replacement-process page (may already cover this; verify before building).
-3. **Poly-B pipe and rental/landlord obligations in Alberta.** Distinct audience (landlords, not owner-occupiers) — low overlap, untapped intent.
-4. **What does a Poly-B home inspection report actually say?** (sample findings, terminology) — now largely covered by the `/poly-b-home-inspection-calgary/` page (report-language section); check for remaining gap before building as a separate page, likely fold any leftover angle into that page instead per `scoring-formula.md`'s consolidation rule.
-5. **Poly-B vs. galvanized steel pipe** (some older Calgary homes have galvanized, not Poly-B — disambiguation content, informational intent, likely lower priority/search volume; verify demand before building).
+1. **How long does a full Poly-B repipe actually take?** Timeline-focused — check overlap with replacement-process page (may already cover this; verify before building).
+2. **Poly-B pipe and rental/landlord obligations in Alberta.** Distinct audience (landlords, not owner-occupiers) — low overlap, untapped intent.
+3. **What does a Poly-B home inspection report actually say?** (sample findings, terminology) — now largely covered by the `/poly-b-home-inspection-calgary/` page (report-language section); check for remaining gap before building as a separate page, likely fold any leftover angle into that page instead per `scoring-formula.md`'s consolidation rule.
+4. **Poly-B vs. galvanized steel pipe** (some older Calgary homes have galvanized, not Poly-B — disambiguation content, informational intent, likely lower priority/search volume; verify demand before building).
 
 ## Flagged overlap-risk — review before scheduling
 
@@ -97,7 +107,7 @@ page instead.
   `poly-b-vs-pex-vs-copper/`. Skip unless reframed around a narrow
   sub-question that page doesn't answer.
 - **Repipe timeline / how long it takes** — overlaps
-  `poly-b-replacement-process-calgary/`; see queued item #2 — verify before
+  `poly-b-replacement-process-calgary/`; see queued item #1 — verify before
   building rather than skip outright, since the existing page may not
   cover timeline in detail.
 
@@ -112,19 +122,23 @@ page instead.
   accurate alt text rather than inventing a filename that doesn't exist —
   a broken hero image is worse than a reused one. Flag in this file if a
   topic really needs its own photo. `hero-process.jpg` was reused for the
-  permit-requirements page (2026-08-20), and `hero-warning-signs.jpg` was
-  reused for the new communities page (2026-08-21); both are now used on
-  multiple pages, which is fine but worth noting in case dedicated photos
-  become worth commissioning once the backlog grows.
-- Only 5 queued topics remain, and all 4 flagged overlap-risk items still
+  permit-requirements page (2026-08-20), `hero-warning-signs.jpg` was
+  reused for the communities page (2026-08-21), and `hero-insurance.jpg`
+  was reused for the mortgage/refinance page (2026-08-25); several images
+  are now used on multiple pages, which is fine but worth noting in case
+  dedicated photos become worth commissioning once the backlog grows.
+- Only 4 queued topics remain, and all 4 flagged overlap-risk items still
   need review before they can be scheduled. When the queued list gets down
   to a handful of unambiguous topics (or runs dry), the next run should
   stop and flag it for a fresh batch of keyword research rather than
-  inventing new topics unattended, per the process note above.
+  inventing new topics unattended, per the process note above. We're
+  already close to that point — the next run or two should plan for this.
 - Note (2026-08-21 run): outbound WebFetch calls started failing partway
   through fact-checking with `PROVENANCE_REQUIRED` (a permission gate that
   needs a user to approve, unavailable in this unattended scheduled run).
   WebSearch continued to work throughout. If a future run hits the same
   issue, lean on WebSearch results and only fetch pages that don't need
   the failing tool, and don't publish a specific factual claim that
-  couldn't be independently confirmed.
+  couldn't be independently confirmed. (Note: WebFetch worked fine again
+  on the 2026-08-25 run, so this issue appears intermittent rather than
+  a permanent block.)
