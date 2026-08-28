@@ -4,7 +4,7 @@ Tracking file for the twice-weekly SEO article production process. Read this
 file at the start of every content-production run to see what's published,
 what's queued, and what needs review before it's built.
 
-Last updated: 2026-08-25
+Last updated: 2026-08-28
 
 ## Cadence & process
 
@@ -38,6 +38,13 @@ Last updated: 2026-08-25
   could use both WebSearch and WebFetch this time. The GitHub connector also
   worked cleanly end to end, including the two-step create/update on the new
   article and single-shot updates on sitemap.xml/content-backlog.md.
+- Note (2026-08-28 run): both WebSearch and WebFetch worked without issue
+  throughout fact-checking (Alberta trade-certification rules, City of
+  Calgary contractor licensing, WCB registration, and market warranty norms
+  all confirmed via live sources). The GitHub connector also worked cleanly
+  end to end again — two-step create/update on the new article (byte-size
+  verified identical pre/post push via a local diff), single-shot updates
+  on sitemap.xml and this file.
 
 ## Published pages (11)
 
@@ -82,6 +89,12 @@ Last updated: 2026-08-25
 |---|---|---|
 | Can you get a mortgage or refinance with Poly-B pipe in the home? | `/poly-b-mortgage-refinance-calgary/` | Fact-checked via WebSearch/WebFetch: no Canadian lender rule requires Poly-B removal before approving a mortgage; confirmed that Canadian mortgage lenders universally require proof of active home insurance before funding/renewing a loan (standard industry practice, multiple sources), and that Poly-B is a well-documented home-insurance underwriting risk (consistent with the site's own `/poly-b-home-insurance-alberta/` page — some insurers surcharge, exclude, or decline). The article frames the insurance requirement as the real financing chokepoint rather than asserting a direct "lenders refuse Poly-B" rule, since only one low-authority, uncited source made that direct claim. Refinance-appraisal claims (appraisers may note visible Poly-B, similar to an aging furnace/roof) are framed generally/conditionally since no specific lender policy document was found to cite. Checked for overlap with the insurance and buying/selling pages before writing — kept this page focused specifically on the lending/financing mechanism (distinct angle) and cross-linked to both. Reused `hero-insurance.jpg` (closest thematic match — a homeowner reviewing financial paperwork at a kitchen table, verified by viewing the actual image) since no mortgage-specific photo exists. Linked to the insurance, replacement-cost, and buying/selling pages from the body. |
 
+## Week 5 articles (published 2026-08-28)
+
+| Topic | URL | Notes |
+|---|---|---|
+| How to choose a Poly-B replacement plumber in Calgary | `/poly-b-choosing-plumber-calgary/` | Fact-checked via WebSearch/WebFetch: plumbing is a compulsory-certification trade in Alberta (confirmed via tradesecrets.alberta.ca) — anyone doing restricted plumbing work must be a registered apprentice, certified journeyperson, or hold a recognized trade certificate; confirmed via calgary.ca that plumbing contractors need a City of Calgary business licence as a specialty trade contractor and must register as a City Qualified Trade with a journeyperson plumber to pull permits; confirmed Alberta businesses generally must register with WCB within 15 days of hiring their first employee (general rule, no specific construction-industry exemption found to cite, so the article frames this as a question to ask rather than an absolute legal mandate). Market warranty norms (materials vs. workmanship split, typical workmanship ranges, transferability) checked against multiple Calgary competitor pages rather than asserted as universal figures — the article deliberately avoids quoting a specific "typical" warranty length since coverage varies significantly by contractor, and instead teaches homeowners what to ask for. Reused `hero-about.jpg` (a Calgary plumber smiling in front of his van, mountains in the background — flagged in the prior run's notes as a strong trust/credibility fit for this exact topic) since no dedicated photo exists. Linked to the permit-requirements, replacement-cost, and buying/selling pages from the body. |
+
 ## Keyword research log (2026-08-25)
 
 Ran a fresh research pass per the note below about the queue running low.
@@ -95,15 +108,16 @@ existing queue before adding anything, per the consolidation rule.
 Candidates investigated and their outcome:
 
 - **Choosing/hiring a Poly-B replacement plumber** (questions to ask,
-  licensing, warranty) — ADDED. Strong validation: multiple Calgary-market
-  competitors target this exact query directly (Urban Piping's "Choosing a
-  Trusted Poly B Repiping Contractor," Poly B Plumbing Guys' "What to Look
-  for When Hiring," Mr. Rooter, Aquality). High commercial/local-transactional
-  intent — this is close-to-conversion content. Folding "what warranty
-  should I get" into this page rather than building it separately, since
-  Urban Piping's own dedicated warranty article covers the same searcher
-  intent as their hiring guide — a standalone warranty page here would be a
-  thin near-duplicate of this one. Est. score ~65-70 (high commercial value
+  licensing, warranty) — ADDED, now published (see Week 5 above). Strong
+  validation: multiple Calgary-market competitors target this exact query
+  directly (Urban Piping's "Choosing a Trusted Poly B Repiping Contractor,"
+  Poly B Plumbing Guys' "What to Look for When Hiring," Mr. Rooter,
+  Aquality). High commercial/local-transactional intent — this is
+  close-to-conversion content. Folded "what warranty should I get" into
+  this page rather than building it separately, since Urban Piping's own
+  dedicated warranty article covers the same searcher intent as their
+  hiring guide — a standalone warranty page here would be a thin
+  near-duplicate of this one. Est. score ~65-70 (high commercial value
   offsets real competitor difficulty).
 - **Poly-B pipe and frozen/winter pipe risk in Calgary** — ADDED. Validated
   by two competitors running a Poly-B-specific freeze angle (Urban Piping's
@@ -146,13 +160,12 @@ Candidates investigated and their outcome:
 
 ## Queued topics (priority order, ready to build)
 
-1. **How to choose a Poly-B replacement plumber in Calgary** (questions to ask, licensing/insurance to verify, what warranty coverage should look like). NEW (2026-08-25) — high commercial intent, closest to a booking decision of anything in the queue. See research log above.
-2. **Poly-B pipe and rental/landlord obligations in Alberta.** Distinct audience (landlords, not owner-occupiers) — low overlap, untapped intent. Fold in a secondary/legal-suite sub-angle if it fits naturally (see research log) rather than a separate page.
-3. **Poly-B pipe and frozen/winter pipe risk in Calgary.** NEW (2026-08-25) — seasonal, local-transactional, a distinct failure mechanism from the warning-signs page. See research log above.
-4. **How long does a full Poly-B repipe actually take?** Timeline-focused — check overlap with replacement-process page (may already cover this; verify before building).
-5. **Can you DIY a Poly-B pipe replacement?** (risks, code requirements, why most Calgary homeowners hire a licensed plumber instead). NEW (2026-08-25) — ties to the permit-requirements page. See research log above.
-6. **What does a Poly-B home inspection report actually say?** (sample findings, terminology) — now largely covered by the `/poly-b-home-inspection-calgary/` page (report-language section); check for remaining gap before building as a separate page, likely fold any leftover angle into that page instead per `scoring-formula.md`'s consolidation rule.
-7. **Poly-B vs. galvanized steel pipe** (some older Calgary homes have galvanized, not Poly-B — disambiguation content, informational intent, likely lower priority/search volume; verify demand before building).
+1. **Poly-B pipe and rental/landlord obligations in Alberta.** Distinct audience (landlords, not owner-occupiers) — low overlap, untapped intent. Fold in a secondary/legal-suite sub-angle if it fits naturally (see research log above) rather than a separate page.
+2. **Poly-B pipe and frozen/winter pipe risk in Calgary.** Seasonal, local-transactional, a distinct failure mechanism from the warning-signs page. See research log above.
+3. **How long does a full Poly-B repipe actually take?** Timeline-focused — check overlap with replacement-process page (may already cover this; verify before building).
+4. **Can you DIY a Poly-B pipe replacement?** (risks, code requirements, why most Calgary homeowners hire a licensed plumber instead). Ties to the permit-requirements page. See research log above.
+5. **What does a Poly-B home inspection report actually say?** (sample findings, terminology) — now largely covered by the `/poly-b-home-inspection-calgary/` page (report-language section); check for remaining gap before building as a separate page, likely fold any leftover angle into that page instead per `scoring-formula.md`'s consolidation rule.
+6. **Poly-B vs. galvanized steel pipe** (some older Calgary homes have galvanized, not Poly-B — disambiguation content, informational intent, likely lower priority/search volume; verify demand before building).
 
 ## Flagged overlap-risk — review before scheduling
 
@@ -172,7 +185,7 @@ page instead.
   `poly-b-vs-pex-vs-copper/`. Skip unless reframed around a narrow
   sub-question that page doesn't answer.
 - **Repipe timeline / how long it takes** — overlaps
-  `poly-b-replacement-process-calgary/`; see queued item #4 — verify before
+  `poly-b-replacement-process-calgary/`; see queued item #3 — verify before
   building rather than skip outright, since the existing page may not
   cover timeline in detail.
 - **Poly-B and multi-family/apartment buildings** — overlaps
@@ -194,17 +207,17 @@ page instead.
   a broken hero image is worse than a reused one. Flag in this file if a
   topic really needs its own photo. `hero-process.jpg` was reused for the
   permit-requirements page (2026-08-20), `hero-warning-signs.jpg` was
-  reused for the communities page (2026-08-21), and `hero-insurance.jpg`
-  was reused for the mortgage/refinance page (2026-08-25); several images
-  are now used on multiple pages, which is fine but worth noting in case
-  dedicated photos become worth commissioning once the backlog grows.
-  Checked two unused images against the new queue: `hero-about.jpg` (a
-  Calgary plumber smiling in front of his van, mountains in the background)
-  is a strong trust/credibility fit for the "choosing a plumber" topic;
-  `hero-pillar.jpg` (a plumber connecting PEX lines to a water heater) fits
-  the DIY-replacement topic better than a generic reuse would.
-- The queue is refreshed as of 2026-08-25 (7 unambiguous topics now, plus 5
-  flagged overlap-risk items). That should cover roughly 3-4 more runs at
+  reused for the communities page (2026-08-21), `hero-insurance.jpg` was
+  reused for the mortgage/refinance page (2026-08-25), and `hero-about.jpg`
+  (a Calgary plumber smiling in front of his van, mountains in the
+  background) was reused for the choosing-a-plumber page (2026-08-28) —
+  several images are now used on multiple pages, which is fine but worth
+  noting in case dedicated photos become worth commissioning once the
+  backlog grows. `hero-pillar.jpg` (a plumber connecting PEX lines to a
+  water heater) remains unused and is a strong fit for the queued
+  DIY-replacement topic.
+- The queue is now 6 unambiguous topics (down from 7 after this run) plus
+  5 flagged overlap-risk items. That should cover roughly 2-3 more runs at
   the current cadence — plan another research pass once it's back down to
   2-3 unambiguous topics rather than letting it run dry again.
 - Note (2026-08-21 run): outbound WebFetch calls started failing partway
@@ -214,5 +227,5 @@ page instead.
   issue, lean on WebSearch results and only fetch pages that don't need
   the failing tool, and don't publish a specific factual claim that
   couldn't be independently confirmed. (Note: WebFetch worked fine again
-  on the 2026-08-25 run, so this issue appears intermittent rather than
-  a permanent block.)
+  on the 2026-08-25 and 2026-08-28 runs, so this issue appears intermittent
+  rather than a permanent block.)
