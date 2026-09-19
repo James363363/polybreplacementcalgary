@@ -4,7 +4,7 @@ Tracking file for the twice-weekly SEO article production process. Read this
 file at the start of every content-production run to see what's published,
 what's queued, and what needs review before it's built.
 
-Last updated: 2026-08-28
+Last updated: 2026-09-19
 
 ## Cadence & process
 
@@ -116,37 +116,77 @@ Last updated: 2026-08-28
 | Can you DIY a Poly-B pipe replacement? | `/poly-b-diy-replacement-calgary/` | Built on the already-established fact (from the 2026-08-20 permit-requirements page) that homeowners may self-permit only if owner-occupied and doing the work themselves. Framed DIY as narrowly legal but practically risky — concealed work, specialized crimping tools, and insurance/resale complications if unpermitted or done incorrectly — without discouraging small, visible, easily-inspected DIY jobs. Reused `hero-pillar.jpg` (a plumber connecting PEX lines to a water heater, previously flagged in the 2026-08-25 notes as the best fit for this exact topic, verified by viewing the actual image). Linked to the permit-requirements, replacement-cost, and choosing-plumber pages from the body. |
 | Poly-B vs. galvanized steel pipe | `/poly-b-vs-galvanized-steel-pipe/` | Verified real demand/competitor validation before building (per the queue note to confirm demand first): found direct competitor content combining Poly-B and galvanized replacement (theirishplumber.ca's "Replacing Poly B and Galvanized Piping"), confirming this is a real search/content pattern, not a manufactured topic. Fact-checked galvanized pipe specifics via canadianhomeinspection.com: became standard ~1940s, homes built before ~1970 most likely to have it, typical lifespan ~20 years with significant deterioration by 30-40 years, fails via internal corrosion/rust reducing water pressure and eventually pinhole leaks — a genuinely distinct failure mechanism from Poly-B's brittleness/fitting-cracking pattern, so this is disambiguation content rather than a near-duplicate of any existing page. Visual/magnetic identification details (rigid vs. flexible, magnet test, threaded vs. crimped fittings) are general, well-established plumbing knowledge. Reused `hero-lawsuit.jpg` (a close-up of a coiled Poly-B pipe's printed stamp being examined with a magnifying glass, verified by viewing the actual image) as the closest thematic match for an identification-focused article, rather than the vs-pex-vs-copper page's image, since that photo's grey coiled pipe reads as flexible plastic and would be inaccurate for a galvanized (rigid metal) comparison. Linked to the warning-signs and home-inspection pages from the body. |
 
-## Queued topics — resolved this run, none remain ready to build
+## Week 7 articles (published 2026-09-19)
 
-The queue that was refreshed on 2026-08-25 (7 topics) is now fully resolved as of
-2026-08-28's bulk-publish run. Four became new pages (Week 6 above). The
-remaining two were re-verified against the specific existing pages they might
-overlap and confirmed to already be thoroughly covered, so no new page was
-built for either, per `scoring-formula.md`'s consolidation rule:
+| Topic | URL | Notes |
+|---|---|---|
+| What to do when filing a Poly-B insurance claim in Calgary | `/poly-b-insurance-claim-calgary/` | Built from fresh keyword research (queue had been empty since 2026-08-28) after checking demand/competitor signals: confirmed real search/content pattern via a direct competitor page (Urban Piping's "Mastering Home Insurance Claims for Poly B Plumbing Issues", separate from their general insurance-coverage page — validating that "will this be covered" and "how do I actually file and win a claim" are genuinely distinct content types). Verified no overlap by reading `/poly-b-home-insurance-alberta/` (covers coverage/underwriting Q&A, not claims procedure) and `/poly-b-emergency-leak-repair-calgary/` (covers the first-10-minutes shutdown steps, with only one brief FAQ item on claims) in full before writing — this page is the distinct procedural layer: what to document, what to keep as evidence, what an adjuster asks for, and how a repipe's permit/invoice factors into the claim. Fact-checked via WebSearch/WebFetch against BrokerLink, Promutuel Insurance, and RBC Insurance: confirmed the standard Canadian "sudden and accidental" vs. "gradual" water damage distinction, and the standard claim-filing steps (photograph before cleanup, keep the failed part as evidence, notify insurer promptly, mitigate further damage without over-cleaning, keep all receipts). Did not claim insurers treat Poly-B claims differently as a documented policy — framed as "some adjusters may ask more questions" since no source confirmed a formal Poly-B-specific claims policy. Reused `hero-insurance.jpg` (a homeowner reviewing paperwork and a laptop at a kitchen table, verified by viewing the actual image — second use of this file, first was `/poly-b-home-insurance-alberta/`) since no claims-specific photo exists. Linked to the emergency-leak-repair, home-insurance, and replacement-cost pages from the body.
 
-- **How long does a full Poly-B repipe actually take?** — RESOLVED, no new
-  page needed. Read `/poly-b-replacement-process-calgary/` in full: it
-  already has a dedicated "The Short Answer First" section stating typical
-  timeline (a few days to about a week), a detailed zone-by-zone
-  stage-by-stage breakdown, and an FAQ item specifically on "How many days
-  will my water actually be off?" A separate timeline page would be a
-  near-duplicate. If timeline questions keep showing up in research passes,
-  consider a refresh of the existing process page instead of a new page.
-- **What does a Poly-B home inspection report actually say?** — RESOLVED,
-  no new page needed. Read `/poly-b-home-inspection-calgary/` in full: it
-  already has a dedicated "What Your Inspection Report Will Actually Say"
-  section covering the three common report-language forms (material
-  observation, recommendation for further evaluation, risk/concern flag)
-  plus FAQ coverage of the same ground. A separate report-language page
+## Queued topics
+
+The queue that was refreshed on 2026-08-25 (7 topics) was fully resolved as of
+2026-08-28's bulk-publish run (four became pages, two were folded into
+existing pages — see below). The queue then sat empty until this run.
+
+**2026-09-19 run:** the queue was empty on arrival (as flagged after
+2026-08-28), so this run did a fresh keyword-research pass per
+`scoring-formula.md` before building anything, per the standing instruction
+to get owner approval for a fresh batch rather than inventing topics
+unattended — the owner approved running the research and publishing from it
+in this session. Searched for real demand signals (competitor content,
+People Also Ask patterns) around Poly-B + insurance, financing, and cost
+angles not yet covered, and checked every candidate against all 22 published
+pages plus the overlap-risk list below before committing to one:
+
+- **Poly-B insurance claims process** — BUILT this run, see Week 7 above.
+  Scored well on all four signals: real demand (a direct competitor runs a
+  dedicated page on this exact angle, separate from their general coverage
+  page), local-transactional/commercial intent (someone who just had a leak
+  is a high-intent lead), and a genuinely distinct angle from both
+  `/poly-b-home-insurance-alberta/` (covers "will this be covered," not "how
+  do I file and win the claim") and `/poly-b-emergency-leak-repair-calgary/`
+  (covers the first-10-minutes shutdown, not the claims process).
+- **Poly-B repipe financing / payment plan options in Calgary** — QUEUED,
+  next in line. A direct competitor (Urban Piping) has a dedicated page on
+  financing strategies for a Poly-B project, confirming real demand for this
+  angle. Considered building it this run but held back: `/poly-b-mortgage-refinance-calgary/`
+  already has a "Using a Refinance to Pay for the Repipe" section covering
+  HELOC/refinance as a funding option, so a new page needs to clearly focus
+  on what that page doesn't cover — third-party contractor financing
+  programs (installment loans, deferred-interest offers), how those compare
+  to a HELOC/refinance, and what to watch for in financing terms — rather
+  than re-covering the refinance angle. Before building, verify current
+  Alberta/Canada consumer-financing disclosure norms (interest rates,
+  deferred-interest terms) so the page doesn't overclaim on rates or terms
+  the business doesn't actually offer; this needs the actual business's
+  financing partner/terms confirmed with the site owner before publishing,
+  since inventing specific rates or programs would be a false claim.
+- **Cost by home size / square footage breakdown** — RESOLVED, no new page
+  needed. Read `/poly-b-replacement-cost-calgary/` in full: it already has a
+  "Typical Poly-B replacement cost by home type" table segmenting condo,
+  bungalow, 2-storey, and walkout-basement homes with illustrative price
+  ranges, plus a full section on what moves price up or down (fixtures,
+  storeys, finished vs. unfinished basement, etc.). This satisfies the
+  overlap-risk note's own condition ("only build as a separate page if the
+  existing cost page doesn't already segment by home size") — moved from
+  flagged overlap-risk to resolved.
+- **How long does a full Poly-B repipe actually take?** — RESOLVED (carried
+  over from 2026-08-28), no new page needed. Read `/poly-b-replacement-process-calgary/`
+  in full: it already has a dedicated "The Short Answer First" section
+  stating typical timeline (a few days to about a week), a detailed
+  zone-by-zone stage-by-stage breakdown, and an FAQ item specifically on
+  "How many days will my water actually be off?" A separate timeline page
   would be a near-duplicate.
+- **What does a Poly-B home inspection report actually say?** — RESOLVED
+  (carried over from 2026-08-28), no new page needed. Read
+  `/poly-b-home-inspection-calgary/` in full: it already has a dedicated
+  "What Your Inspection Report Will Actually Say" section covering the
+  three common report-language forms plus FAQ coverage of the same ground.
+  A separate report-language page would be a near-duplicate.
 
-**The queue is now empty of ready-to-build topics.** Per the process note
-above (auto-publish philosophy vs. the `refresh-seo-rankings` skill's
-approval-gated model), this is the point to run a fresh keyword research
-pass — following `scoring-formula.md` again, checking candidates against all
-21 published pages — before the next scheduled run, rather than inventing a
-topic without that research. Flagging this explicitly for the site owner
-rather than building an unvalidated topic to keep the cadence going.
+**Next scheduled run:** build the financing/payment-plans page once real
+financing terms are confirmed with the site owner (see note above), or run
+another keyword-research pass if that isn't ready in time.
 
 ## Flagged overlap-risk — still review before scheduling
 
@@ -155,10 +195,9 @@ were not touched in this run. Per `scoring-formula.md`'s consolidation rule,
 don't build a near-duplicate — either confirm a genuinely distinct angle
 first or fold into the existing page instead.
 
-- **Cost by home size / square footage breakdown** — likely overlaps
-  `poly-b-replacement-cost-calgary/`. Only build as a separate page if the
-  existing cost page doesn't already segment by home size; otherwise this
-  is a refresh candidate for the existing page, not a new page.
+(Cost by home size / square footage breakdown was resolved 2026-09-19 —
+see Queued topics above — and removed from this list.)
+
 - **Poly-B pipe recalls / class-action Canada (revisited)** — overlaps
   `poly-b-lawsuit-history-canada/` directly. Skip unless a genuinely new
   angle emerges (e.g. a new recall or settlement).
@@ -174,25 +213,27 @@ first or fold into the existing page instead.
 
 ## Notes for the next scheduled run
 
-- **Queue is empty — run fresh keyword research before the next content run**
-  rather than building an unvalidated topic. Follow `scoring-formula.md`
-  from the start: search for candidate query patterns, assess competitor
-  content, check every candidate against all 21 published pages plus the
-  flagged overlap-risk list above before adding anything.
+- **One topic queued (financing/payment-plans), pending a fact-check
+  blocker** — see Queued topics above. It needs the site owner to confirm
+  what financing programs/terms the business actually offers before it can
+  be written without inventing rates or programs. If that isn't resolved in
+  time for the next scheduled run, run a fresh keyword-research pass per
+  `scoring-formula.md` instead of guessing at financing terms.
 - Business NAP, phone number, and license/insurance details throughout the
   site are still placeholders — do not remove the placeholder notes when
   editing pages; that's a real-business-info task for the site owner, not
   the content-automation process.
 - Hero images used so far: `hero-process.jpg` (permit-requirements),
   `hero-warning-signs.jpg` (communities), `hero-insurance.jpg`
-  (mortgage/refinance), `hero-about.jpg` (choosing-plumber), `hero-condo.jpg`
+  (mortgage/refinance, and reused a 2nd time 2026-09-19 for the insurance
+  claims page), `hero-about.jpg` (choosing-plumber), `hero-condo.jpg`
   (landlord/rental), `hero-emergency.jpg` (frozen pipes), `hero-pillar.jpg`
   (DIY replacement), `hero-lawsuit.jpg` (galvanized comparison, reused from
   its original lawsuit-history page). Every image in `/images/` has now
   been used at least once; future topics will need to reuse an image a
-  second time (verify by viewing the actual file for an honest alt-text
-  match, as done throughout this run) or a dedicated photo would need to be
-  commissioned once the backlog grows further.
+  second (or third) time (verify by viewing the actual file for an honest
+  alt-text match, as done throughout this run) or a dedicated photo would
+  need to be commissioned once the backlog grows further.
 - Note (2026-08-21 run): outbound WebFetch calls started failing partway
   through fact-checking with `PROVENANCE_REQUIRED` (a permission gate that
   needs a user to approve, unavailable in this unattended scheduled run).
